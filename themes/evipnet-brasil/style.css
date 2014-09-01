@@ -1,0 +1,169 @@
+/*
+Theme Name: Evipnet Brasil
+Theme URI: http://global.evipnet.org/pt/
+Author: Moacir Moda - BIREME
+Author URI: http://bireme.org/
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+html, body {
+	font-family: "Trebuchet MS", Arial, serif;
+	font-size: 10pt;
+}
+a, a:link, a:visited {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+h2, h3 {
+	font-size: 13pt;
+	font-weight: bold;
+	padding: 0 0 13px 0;
+}
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.top, footer {
+	margin: 0;
+	width: 100%;
+	padding: 0;
+}
+.top {
+	padding: 0 0 30px 0;
+	margin: 0;
+	width: 100%;
+	background: url(img/top-bg.jpg) repeat-x;
+	border-bottom: 2px solid #f0af4d;
+}
+.top .contato {
+	width: 100%;
+	text-align: right;
+	padding: 7px 0;
+}
+.top .contato a {
+	color: #fff;
+	background: url(img/bt_contact.gif) top left no-repeat;
+	padding-left: 20px;
+}
+.top .logo {
+	padding: 20px 0 0 0;
+	float: left;
+}
+.top .menu-topo-container {
+	float: left;
+	margin: 87px 0 0 15px;
+}
+.top .menu-topo-container ul li {
+	display: inline-block;
+	padding: 2px 0;
+	border-right: 1px solid #000;
+}
+.top .menu-topo-container ul li:last-child {
+	border-right: none;
+}
+.top .menu-topo-container ul li a {
+	padding: 2px 7px;
+	font-size: 11pt;
+}
+.top .social {
+	float: right;
+}
+footer {
+	background-color: #fcefde;
+	border-top: 2px solid #f0af4d;
+	padding: 30px 0 80px 0;
+	color: #666;
+	font-size: 8pt;
+}
+footer h3 {
+	font-size: 10pt;
+	padding: 10px 0 0 0;
+	margin: 0;
+}
+.widget {
+	padding: 30px 0;
+	border-bottom: 1px solid #f0af4d;
+}
+
+.home .left {
+	width: 730px;
+}
+
+.search input[type='text'] {
+	font-size: 15pt;
+	border: 1px solid #c2c2c2;
+	width: 450px;
+	height: 30px;
+	float: left;
+}
+.search #search-submit {
+	float: left;
+}
+.search ul {
+	float: left;
+}
+.search ul li {
+	display: inline-block;
+	margin: 0 10px 0 0;
+}
+.search ul.links {
+	margin: 5px 0 0 80px;
+}
+.search ul.links li a {
+	color: #54a7ff;
+	font-weight: bold;
+}
+.widget.destaques img {
+	margin: 0 0 10px 0;
+}
+.widget.destaques > ul > li {
+	display: inline-block;
+	padding: 0 10px 0 0;
+}
+.widget.destaques > ul > li > ul {
+	margin-left: 20px;
+}
+.widget.destaques > ul > li > ul > li {
+	list-style-type: circle;
+}
+.widget.destaques > ul > li > ul > li > a {
+	color: #a63533;
+	font-weight: bold;
+	line-height: 14pt;
+}
+
+.side {
+	width: 250px;
+	padding: 0 0 0 10px;
+}
+.widget.noticias li {
+	padding: 7px 0;
+	border-top: 1px solid #f0af4d;
+}
+.widget.noticias li .excerpt { 
+	line-height: 12pt;
+}
+.widget.noticias img {
+	float: left;
+	margin: 0 7px 0 0;
+}
+.widget.noticias h3 {
+	font-weight: bold;
+	color: #a63533;
+}
+.widget.noticias .data {
+	font-size: 9pt;
+	color: #ccc;
+	font-style: italic;
+} 
