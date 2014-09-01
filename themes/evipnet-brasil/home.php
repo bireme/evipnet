@@ -4,7 +4,9 @@
 	<div class="container">
 		<div class="left">
 			<div class="widget search">
-				<h2>Pesquisa na EVIPNet Brasil</h2>
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('search') ) {}; ?>
+
+				<!-- <h2>Pesquisa na EVIPNet Brasil</h2>
 				<form action="">
 					<input type="text" name="q">
 					<a href="#" id="search-submit"><img src="<?= get_stylesheet_directory_uri(); ?>/img/search-button.jpg"></a>
@@ -15,24 +17,49 @@
 						<li><a href="#"><input type="radio"> Health Systems Evidence</a></li>
 					</ul>
 					<ul class="links">
-						<li><a href="#">Busca Avançaca</a></li>
+						<li><a href="#">Busca Avançada</a></li>
 						<li><a href="#">Ajuda</a></li>
 					</ul>
 				</form>
-				<div style="clear:both"></div>
+				<div style="clear:both"></div> -->
+			</div>
+
+			<div class="widget produtos">
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('produtos') ) {}; ?>
+
+				<!-- <ul>
+					<li class="block">
+						<img src="<?= get_stylesheet_directory_uri(); ?>/img/icon-recursos-metodologicos.png">
+						<h3>Recursos Metodológicos</h3>
+						<ul>
+							<li><a href="#">Ferramenta SUPPORT</a></li>
+							<li><a href="#">Wiki para Síntese de Evidências</a></li>
+							<li><a href="#">Relatório Anual 2013</a></li>
+							<li><a href="#">EVIPNet na prática</a></li>
+						</ul>
+					</li>
+					<li class="block">
+						<img src="<?= get_stylesheet_directory_uri(); ?>/img/icon-produtos.png">						
+						<h3>Síntese de Evidências para Políticas de Saúde</h3>
+						<ul>
+							<li><a href="#">Redução de Mortalidade Perinatal</a></li>
+							<li><a href="#">Prevenção e controle da pressão arterial</a></li>
+							<li><a href="#">Prevenção de dengue no espaço urbano</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div style="clear:both"></div> -->
 			</div>
 
 			<div class="widget">
-				<img src="<?= get_stylesheet_directory_uri(); ?>/img/item2.jpg">
-			</div>
-
-			<div class="widget">
-				<img src="<?= get_stylesheet_directory_uri(); ?>/img/item3.jpg">
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('mapa') ) {}; ?>
+				<!-- <img src="<?= get_stylesheet_directory_uri(); ?>/img/item3.jpg"> -->
 			</div>
 
 			<div class="widget destaques">
-				<ul>
-					<li>
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sub-produtos') ) {}; ?>
+				<!-- <ul>
+					<li class="block">
 						<img src="http://placehold.it/230x100">
 						<h3>Prioridade de Saúde</h3>
 						<ul>
@@ -42,7 +69,7 @@
 							<li><a href="#">Nutrição e Micronutrientes</a></li>
 						</ul>
 					</li>
-					<li>
+					<li class="block">
 						<img src="http://placehold.it/230x100">
 						<h3>Capacitação</h3>
 						<ul>
@@ -52,7 +79,7 @@
 							<li><a href="#">Nutrição e Micronutrientes</a></li>
 						</ul>
 					</li>
-					<li>
+					<li class="block">
 						<img src="http://placehold.it/230x100">
 						<h3>Recursos de Informação</h3>
 						<ul>
@@ -62,48 +89,13 @@
 							<li><a href="#">Nutrição e Micronutrientes</a></li>
 						</ul>
 					</li>
-
-				</ul>
+				</ul> -->
 			</div>
 
 		</div>
 		
 		<div class="right side">
-			
-			<div class="widget destaques">destaques</div>
-			<div class="widget noticias">
-				<h2>Notícias</h2>
-				<ul>
-					<li>
-						<a href="#">
-							<img src="http://placehold.it/90x90">
-							<h3>Espirito Santo</h3>
-							<p class="excerpt">Evidência Científica na qualidade do gestor é apresentada no CONASEMS 2014</p>
-							<div class="data">24/07/2014</div>
-						</a>
-						<div style="clear:both"></div>
-					</li>	
-					<li>
-						<a href="#">
-							<img src="http://placehold.it/90x90">
-							<h3>Espirito Santo</h3>
-							<p class="excerpt">Evidência Científica na qualidade do gestor é apresentada no CONASEMS 2014</p>
-							<div class="data">24/07/2014</div>
-						</a>
-						<div style="clear:both"></div>
-					</li>	
-					<li>
-						<a href="#">
-							<img src="http://placehold.it/90x90">
-							<h3>Espirito Santo</h3>
-							<p class="excerpt">Evidência Científica na qualidade do gestor é apresentada no CONASEMS 2014</p>
-							<div class="data">24/07/2014</div>
-						</a>
-						<div style="clear:both"></div>
-					</li>	
-				</ul>
-
-			</div>
+			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar') ) {}; ?>
 		</div>
 	</div>
 	<div style="clear:both"></div>

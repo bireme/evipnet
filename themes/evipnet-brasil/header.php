@@ -30,8 +30,17 @@
             </a></div>
 
             <div class="logo"><img src="<?= get_stylesheet_directory_uri();?>/img/logo.png"></div>
+            
+            <div class="social">
+                <ul>
+                    <li><a href="#"><img src="<?= get_stylesheet_directory_uri();?>/img/icon-facebook.png"></a></li>
+                    <li><a href="#"><img src="<?= get_stylesheet_directory_uri();?>/img/icon-twitter.png"></a></li>
+                    <li><a href="#"><img src="<?= get_stylesheet_directory_uri();?>/img/icon-linkedin.png"></a></li>
+                    <li><a href="#"><img src="<?= get_stylesheet_directory_uri();?>/img/icon-youtube.png"></a></li>
+                </ul>
+            </div>
+            
             <?php wp_nav_menu( array('menu' => 'Topo' )); ?>
-            <div class="social">social</div>
 
             <div style="clear:both"></div>
         </div>
