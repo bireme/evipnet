@@ -4,6 +4,7 @@ show_admin_bar(false);
 add_theme_support( 'post-thumbnails' ); 
 
 add_image_size( 'homepage-thumb', 90, 90, true ); // (cropped)
+add_image_size( 'research-thumb', 200, 200, true ); // (cropped)
 
 // THIS THEME USES wp_nav_menu() IN TWO LOCATIONS FOR CUSTOM MENU.
 if ( function_exists( 'register_nav_menus' ) ) {

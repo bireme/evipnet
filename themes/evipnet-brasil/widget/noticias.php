@@ -28,11 +28,16 @@ class NoticiasWidget extends WP_Widget {
 			<h2>Notícias</h2>
 			<ul>
 				<?php while(have_posts()): the_post(); ?>
+					<?php $categories = array();
+					foreach(get_the_category(get_the_ID()) as $category)
+						$categories[] = $category->cat_name;
+					?>
+					
 					<li>
 						<a href="<?= get_permalink(); ?>">
 							<?php the_post_thumbnail('homepage-thumb'); ?>
 							
-							<h3><?php the_category(', '); ?></h3>
+							<h3><?php print implode($categories, ", "); ?></h3>
 							<p class="excerpt"><?php the_title(); ?></p>
 							<div class="data"><?php the_date("m-d-Y"); ?></div>
 						</a>
