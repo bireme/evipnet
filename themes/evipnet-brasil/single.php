@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php 
+
+get_header(); 
+$tipos = array('youtube', 'flickr', 'vimeo-square', 'instagram', 'picasa', 'pinterest', 'google-plus', 'local');
+?>
 
 <div class="intern">
 	<div class="container">
@@ -8,14 +12,32 @@
 			<div class="breadcrumb"><?php if(function_exists('bcn_display')) bcn_display(); ?></div>
 			<div class="content">
 				<?php while(have_posts()): the_post(); ?>
+					
+					<?php 
+					$current_tipos = array();
+					foreach(get_the_terms(get_the_ID(), 'tipo') as $tipo){
+						if(in_array($tipo->slug, $tipos)) {
+							if($tipo->slug == "local") {
+								$current_tipos[] = "wordpress";
+							} else {
+								$current_tipos[] = $tipo->slug;
+							}
+						} 
+					}
+					?>
+
 					<div class="item">
-						<h2><?php the_title(); ?></h2>
+						
+						<h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+							<?php the_title(); ?>
+							<?php foreach($current_tipos as $tipo) print '<span class="fa fa-'.$tipo.'"></span> '; ?> 
+						</a></h2>
 						
 						<div class="icons">
-							<img src="<?= get_stylesheet_directory_uri(); ?>/img/icon-calendar.png"> <?php the_date("d/m/Y à\s H\hi"); ?>
-							<img src="<?= get_stylesheet_directory_uri(); ?>/img/icon-autor.png"> <?php the_author(); ?>
-							<img src="<?= get_stylesheet_directory_uri(); ?>/img/icon-share.png"> Compartilhar<br>
-							<?php if(has_tag()) : ?><img src="<?= get_stylesheet_directory_uri(); ?>/img/icon-tag.png"> <?php the_tags(); ?><?php endif; ?>
+							<span class="fa fa-calendar"></span> <?php the_date("d/m/Y à\s H\hi"); ?>
+							<span class="fa fa-user"></span> <?php the_author(); ?>
+							<span class="fa fa-share-alt"></span> Compartilhar<br>
+							<?php if(has_tag()) : ?><span class="fa fa-tag"></span> <?php the_tags(); ?><?php endif; ?>
 						</div>
 
 						<div style="clear:both"></div>

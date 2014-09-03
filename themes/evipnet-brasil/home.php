@@ -97,8 +97,8 @@
 		<div class="right side">
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar') ) {}; ?>
 		</div>
+		<div style="clear:both"></div>
 	</div>
-	<div style="clear:both"></div>
 </div>
 
 <?php get_footer(); ?>

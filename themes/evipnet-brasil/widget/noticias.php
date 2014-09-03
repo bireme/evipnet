@@ -22,7 +22,7 @@ class NoticiasWidget extends WP_Widget {
 	 */
 	public function widget($argumentos, $instancia) {
 		
-		query_posts("posts_per_page=5"); ?>
+		query_posts("posts_per_page=5&tipo=noticia"); ?>
 
 		<div class="widget noticias">
 			<h2>Notícias</h2>

@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" type="text/css" href="<?= get_stylesheet_directory_uri(); ?>/reset.css" />
     <link rel="stylesheet" type="text/css" href="<?= get_stylesheet_directory_uri(); ?>/style.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
     
     <?php wp_head(); ?>
 
@@ -33,10 +35,18 @@
             
             <div class="social">
                 <ul>
-                    <li><a href="#"><img src="<?= get_stylesheet_directory_uri();?>/img/icon-facebook.png"></a></li>
-                    <li><a href="#"><img src="<?= get_stylesheet_directory_uri();?>/img/icon-twitter.png"></a></li>
-                    <li><a href="#"><img src="<?= get_stylesheet_directory_uri();?>/img/icon-linkedin.png"></a></li>
-                    <li><a href="#"><img src="<?= get_stylesheet_directory_uri();?>/img/icon-youtube.png"></a></li>
+                    <?php if(get_option('link_facebook')): ?>
+                        <li><a href="<?= esc_attr( get_option('link_facebook') ); ?>"><img src="<?= get_stylesheet_directory_uri();?>/img/icon-facebook.png"></a></li>
+                    <?php endif; ?>
+                    <?php if(get_option('link_twitter')): ?>
+                        <li><a href="<?= esc_attr( get_option('link_twitter') ); ?>"><img src="<?= get_stylesheet_directory_uri();?>/img/icon-twitter.png"></a></li>
+                    <?php endif; ?>
+                    <?php if(get_option('link_linkedin')): ?>
+                        <li><a href="<?= esc_attr( get_option('link_linkedin') ); ?>"><img src="<?= get_stylesheet_directory_uri();?>/img/icon-linkedin.png"></a></li>
+                    <?php endif; ?>
+                    <?php if(get_option('link_youtube')): ?>
+                        <li><a href="<?= esc_attr( get_option('link_youtube') ); ?>"><img src="<?= get_stylesheet_directory_uri();?>/img/icon-youtube.png"></a></li>
+                    <?php endif; ?>
                 </ul>
             </div>
             

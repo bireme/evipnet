@@ -74,4 +74,8 @@ add_action( 'widgets_init', 'evipnet_widgets_init' );
 include_once "widget/noticias.php";
 include_once "widget/search.php";
 
+// theme options
+include_once "theme-options.php";
+
+
 ?>

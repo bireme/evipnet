@@ -11,6 +11,7 @@
 					<div class="item">
 						<p><?php the_content(); ?></p>
 					</div>
+					<div style="clear:both"></div>
 				<?php endwhile; ?>
 			</div>
 
