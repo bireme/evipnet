@@ -10,9 +10,9 @@
     <link rel="stylesheet" type="text/css" href="<?= get_stylesheet_directory_uri(); ?>/style.css" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-    
     <?php wp_head(); ?>
 
+    <script type='text/javascript' src='<?= get_stylesheet_directory_uri(); ?>/scripts.js'></script>
     <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo esc_url(get_feed_link()); ?>">
 </head>
 

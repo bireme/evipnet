@@ -22,6 +22,7 @@
 					</ul>
 				</form>
 				<div style="clear:both"></div> -->
+				<div style="clear:both"></div>
 			</div>
 
 			<div class="widget produtos">
@@ -49,6 +50,7 @@
 					</li>
 				</ul>
 				<div style="clear:both"></div> -->
+				<div style="clear:both"></div>
 			</div>
 
 			<div class="widget">

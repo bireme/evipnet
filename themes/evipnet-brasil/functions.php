@@ -5,6 +5,8 @@ add_theme_support( 'post-thumbnails' );
 
 add_image_size( 'homepage-thumb', 90, 90, true ); // (cropped)
 add_image_size( 'research-thumb', 200, 200, true ); // (cropped)
+add_image_size( 'destaque-primario-thumb', 220, 180, true ); // (cropped)
+add_image_size( 'destaque-secundario-thumb', 230, 180, true ); // (cropped)
 
 // THIS THEME USES wp_nav_menu() IN TWO LOCATIONS FOR CUSTOM MENU.
 if ( function_exists( 'register_nav_menus' ) ) {
@@ -33,6 +35,8 @@ function evipnet_widgets_init() {
 		'id' => 'produtos',
 	    'before_widget' => '',
 	    'after_widget' => '',
+	    'before_widget' => '<li class="block">',
+	    'after_widget' => '</li>',
 	    'before_title' => '<h2>',
 	    'after_title' => '</h2>',
 	)); 
@@ -51,8 +55,8 @@ function evipnet_widgets_init() {
 	register_sidebar(array(
 		'name' => "Sub Produtos",
 		'id' => 'sub-produtos',
-	    'before_widget' => '',
-	    'after_widget' => '',
+	    'before_widget' => '<li class="block">',
+	    'after_widget' => '</li>',
 	    'before_title' => '<h2>',
 	    'after_title' => '</h2>',
 	)); 

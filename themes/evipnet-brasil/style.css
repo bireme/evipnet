@@ -153,6 +153,7 @@ footer h3 {
 .widget.produtos li.block {
 	float: left;
 	width: 50%;
+	list-style-type: none;
 }
 .widget.produtos img {
 	float: left;
@@ -184,6 +185,13 @@ footer h3 {
 .side {
 	width: 250px;
 	padding: 0 0 0 10px;
+}
+.side h2:first-child {
+	margin: -30px 0 0 0;
+	padding: 20px 0 10px 0;
+}
+.metaslider {
+	
 }
 .widget.noticias li {
 	padding: 15px 0;
@@ -254,4 +262,25 @@ footer h3 {
 }
 .researchs h2 {
 	font-size: 12pt;
+}
+
+.gallery .left h2 {
+	padding: 20px 0 0 0;
+	margin-bottom: -30px;
+}
+.gallery .primario img {
+	width:700px; /* you can use % */
+	height: auto;
+	margin-top: -40px;
+}
+.gallery .secundario .item {
+	width: 230px;
+	float: left;
+	padding: 0px 20px 20px 0;
+}
+.gallery h3 {
+	padding: 5px 0;
+}
+.gallery .secundario .item:nth-child(3n) {
+	padding: 0;
 }
