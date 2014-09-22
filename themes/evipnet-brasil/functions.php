@@ -70,6 +70,16 @@ function evipnet_widgets_init() {
 	    'before_title' => '<h2>',
 	    'after_title' => '</h2>',
 	)); 
+
+	if ( function_exists('register_sidebar') )
+	register_sidebar(array(
+		'name' => "Rodapé",
+		'id' => 'footer',
+	    'before_widget' => '',
+		'after_widget'  => '',
+	    'before_title' => '<h2>',
+	    'after_title' => '</h2>',
+	)); 
 }
 
 add_action( 'widgets_init', 'evipnet_widgets_init' );
