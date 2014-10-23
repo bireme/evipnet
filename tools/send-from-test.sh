@@ -18,4 +18,3 @@ wp search-replace $dst/evipnet $dir/htdocs
 # wp db export /tmp/evipnet.sql
 # wp db import /tmp/evipnet-local.sql
 # rm /tmp/evipnet-local.sql
-
