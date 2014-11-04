@@ -120,7 +120,9 @@ footer h3 {
 .home .left, .intern .left {
 	width: 730px;
 }
-
+.archive .item img {
+	float:left;
+}
 .search input[type='text'] {
 	font-size: 15pt;
 	border: 1px solid #c2c2c2;
@@ -226,6 +228,9 @@ footer h3 {
 .intern .item p img {
 	float: left;
 	margin: 0 10px 10px 0;
+}
+.page .intern .item p img {
+	float: none;
 }
 .intern .item > a img {
 	float: left;
