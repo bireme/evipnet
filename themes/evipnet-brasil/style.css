@@ -27,6 +27,15 @@ h2, h3 {
 span.fa {
 	color: #000;
 }
+.content li {
+	list-style-type: disc;
+	margin-left: 25px;
+	color: #000;
+}
+.content a {
+	text-decoration: underline !important;
+	color:blue !important;
+}
 .container {
 	width: 1000px;
 	margin: 0 auto;
