@@ -27,6 +27,7 @@ h2, h3 {
 span.fa {
 	color: #000;
 }
+em, i {font-style: italic;}
 .content li {
 	list-style-type: disc;
 	margin-left: 25px;
@@ -34,7 +35,6 @@ span.fa {
 }
 .content a {
 	text-decoration: underline !important;
-	color:blue !important;
 }
 .container {
 	width: 1000px;
