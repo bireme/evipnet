@@ -4,7 +4,7 @@ show_admin_bar(false);
 add_theme_support( 'post-thumbnails' ); 
 
 add_image_size( 'homepage-thumb', 90, 90, true ); // (cropped)
-add_image_size( 'research-thumb', 200, 200, true ); // (cropped)
+add_image_size( 'research-thumb', 97, 97, true ); // (cropped)
 add_image_size( 'destaque-primario-thumb', 220, 180, true ); // (cropped)
 add_image_size( 'destaque-secundario-thumb', 230, 180, true ); // (cropped)
 
