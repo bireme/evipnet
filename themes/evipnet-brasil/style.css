@@ -129,7 +129,7 @@ footer h3 {
 .home .left, .intern .left {
 	width: 730px;
 }
-.archive .item img {
+.archive .item img.attachment-research-thumb {
 	float:left;
 	margin: 0 8px 0 0
 }
