@@ -8,18 +8,21 @@
 
 			<?php while(have_posts()): the_post(); ?>
 				<div class="item">
-					<h2><?php the_title(); ?></h2>
+					<h2><a href="<?php the_permalink(); ?>" title="Ir para '<?php the_title(); ?>'"><?php the_title(); ?></a></h2>
 					<?= the_post_thumbnail('research-thumb'); ?>
 					<p><?php the_excerpt(); ?></p>
 
 					<div class="icons">
 						<a href="mailto:<?php the_field('email'); ?>"><img src="<?= get_stylesheet_directory_uri(); ?>/img/icon-mail.png"> Contactar Grupo de Pesquisa</a>
-						<a href="<?php the_permalink(); ?>"><img src="<?= get_stylesheet_directory_uri(); ?>/img/icon-folder.png"> Ver Síntese de Evidência</a>
+						<!-- <a href="<?php the_permalink(); ?>" title="Ir para '<?php the_title(); ?>'"><img src="<?= get_stylesheet_directory_uri(); ?>/img/icon-folder.png"> Ver Síntese de Evidência</a> -->
 					</div>
 				</div>
 
 			<?php endwhile; ?>
+
+			<?php kriesi_pagination(); ?>
 		</div>
+
 
 		<div class="right side">
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar') ) {}; ?>

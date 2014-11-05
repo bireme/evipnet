@@ -42,7 +42,10 @@ $tipos = array('youtube', 'flickr', 'vimeo-square', 'instagram', 'picasa', 'pint
 				</div>
 
 			<?php endwhile; ?>
+
+			<?php kriesi_pagination(); ?>
 		</div>
+
 
 		<div class="right side">
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar') ) {}; ?>
