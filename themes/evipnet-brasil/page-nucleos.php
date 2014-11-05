@@ -18,7 +18,7 @@ if(isset($_GET['mode']) and $_GET['mode'] == 'json') {
 		$output[] = $item;
 	}
 	
-	print json_encode($output, JSON_PRETTY_PRINT);
+	print json_encode($output);
 	die;
 }
 
