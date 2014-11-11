@@ -54,12 +54,12 @@ class SearchWidget extends WP_Widget {
 			<a href="javascript:evipnet_search_submit()" id="search-submit"><img src="<?= get_stylesheet_directory_uri(); ?>/img/search-button.jpg"></a>
 			<div style="clear:both"></div>
 
-			<ul class="radio">
+			<!--ul class="radio">
 				<li><a href="#"><input type="radio" name="collection" value="evipnet" checked="true"> Fontes BVS</a></li>
 				<li><a href="#"><input type="radio" name="collection" value="evipnet-hse"> Health Systems Evidence</a></li>
-			</ul>
-			<ul class="links">
-				<li><a href="javascript:advanced_search(this);">Busca Avançada</a></li>
+			</ul-->
+			<ul class="links" style="margin-left:360px;">
+				<li><a href="http://pesquisa.bvsalud.org/evipnetbr/">Busca Avançada</a></li>
 				<li><a href="#">Ajuda</a></li>
 			</ul>
 		</form>
