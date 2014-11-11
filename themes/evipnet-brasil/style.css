@@ -1,4 +1,3 @@
-/*
 Theme Name: Evipnet Brasil
 Theme URI: http://global.evipnet.org/pt/
 Author: Moacir Moda - BIREME
@@ -180,7 +179,7 @@ footer h3 {
 }
 .widget.destaques li.block {
 	display: inline-block;
-	padding: 0 10px 0 0;
+	padding: 0 2px 0 0;
 }
 .widget.destaques li.block > ul {
 	margin-left: 20px;
