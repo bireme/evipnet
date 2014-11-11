@@ -30,18 +30,7 @@ class SearchWidget extends WP_Widget {
             return true;
         }
 
-        function advanced_search(obj){
-            var source_selected = $('input[name=collection]:checked', '#searchForm').val();
-
-            if (source_selected == 'evipnet-hse'){
-                obj.href = 'http://healthsystemsevidence.org/';
-            }else{
-                obj.href = '/search/evipnet/advanced.php?lang=en';
-            }
-
-            return false;
-        }
-
+        
         function evipnet_search_submit() {
         	$("#searchForm").submit();
         }
@@ -49,7 +38,7 @@ class SearchWidget extends WP_Widget {
 
 		<h2>Pesquisa na EVIPNet Brasil</h2>
 
-		<form action="http://global.evipnet.org/" name="search" method="get" id="searchForm" onsubmit="return executeSearch();" >
+		<form action="http://pesquisa.bvsalud.org/evipnetbr/" name="search" method="get" id="searchForm">
 			<input type="text" name="q">
 			<a href="javascript:evipnet_search_submit()" id="search-submit"><img src="<?= get_stylesheet_directory_uri(); ?>/img/search-button.jpg"></a>
 			<div style="clear:both"></div>
@@ -58,9 +47,9 @@ class SearchWidget extends WP_Widget {
 				<li><a href="#"><input type="radio" name="collection" value="evipnet" checked="true"> Fontes BVS</a></li>
 				<li><a href="#"><input type="radio" name="collection" value="evipnet-hse"> Health Systems Evidence</a></li>
 			</ul-->
-			<ul class="links" style="margin-left:360px;">
-				<li><a href="http://pesquisa.bvsalud.org/evipnetbr/">Busca Avançada</a></li>
-				<li><a href="#">Ajuda</a></li>
+			<ul class="links" style="margin-left:418px;">
+				<li><a href="http://pesquisa.bvsalud.org/evipnetbr/advanced/">Busca Avançada</a></li>
+				<!--li><a href="#">Ajuda</a></li-->
 			</ul>
 		</form>
 		<div style="clear:both"></div>
