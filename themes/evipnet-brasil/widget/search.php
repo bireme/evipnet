@@ -48,7 +48,7 @@ class SearchWidget extends WP_Widget {
 				<li><a href="#"><input type="radio" name="collection" value="evipnet-hse"> Health Systems Evidence</a></li>
 			</ul-->
 			<ul class="links" style="margin-left:418px;">
-				<li><a href="http://pesquisa.bvsalud.org/evipnetbr/advanced/">Busca Avançada</a></li>
+				<li><a href="http://pesquisa.bvsalud.org/evipnetbr/advanced.php?lang=pt">Busca Avançada</a></li>
 				<!--li><a href="#">Ajuda</a></li-->
 			</ul>
 		</form>
