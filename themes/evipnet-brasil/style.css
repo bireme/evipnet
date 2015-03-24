@@ -28,6 +28,7 @@ span.fa {
 	color: #000;
 }
 em, i {font-style: italic;}
+strong {font-weight: bold !important;}
 .content li {
 	list-style-type: disc;
 	margin-left: 25px;
