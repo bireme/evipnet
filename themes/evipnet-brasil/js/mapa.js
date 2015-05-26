@@ -1,5 +1,8 @@
 var map;
-var infowindow = [];
+var points = [];
+var infoWindows = [];
+
+initialize();
  
 function initialize() {
     var latlng = new google.maps.LatLng(-18.8800397, -47.05878999999999);
@@ -11,15 +14,13 @@ function initialize() {
     };
  
     map = new google.maps.Map(document.getElementById("mapa"), options);
-}
- 
-initialize();
+
+    carregarPontos();
+} 
 
 function carregarPontos() {
  	
- 	points = []
  	$.getJSON("?mode=json", function(data){
-
  		
  		$.each(data, function(index, ponto){
 
@@ -30,18 +31,33 @@ function carregarPontos() {
 			    name: ponto.ID,
 			});
 
+            points.push(marker);
  			console.log(ponto);
-			
-			var infowindow = new google.maps.InfoWindow(), marker;
-			google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
+			var infowindow = new google.maps.InfoWindow();
+			infoWindows.push(infowindow);
+
+			google.maps.event.addListener(marker, 'mouseover', (function(marker) {
 			    return function() {
 			        infowindow.setContent('<div style=" height:30px;"><a href="'+ponto.permalink+'">'+ponto.name+'</a></div>');
 			        infowindow.open(map, marker);
 			    }
-			})(marker))
- 		}) 
+			})(marker));
+
+ 		});
+
+        for (var i=0;i<points.length;i++) {
+            (function(i) {
+                google.maps.event.addListener(points[i], 'mouseover', function() {
+                    closeInfoWindows(i);
+                });
+            })(i);
+        }
  	});
- 	
  
 }
-carregarPontos();
+
+function closeInfoWindows(item) {
+    for (var i=0;i<infoWindows.length;i++) {
+        if (i != item) infoWindows[i].close();
+    }
+}
