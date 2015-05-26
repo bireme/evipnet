@@ -35,7 +35,6 @@ $tipos = array('youtube', 'flickr', 'vimeo-square', 'instagram', 'picasa', 'pint
 						
 						<div class="icons">
 							<span class="fa fa-calendar"></span> <?php the_date("d/m/Y à\s H\hi"); ?>
-							<span class="fa fa-user"></span> <?php the_author(); ?>
 							<span class="fa fa-share-alt"></span> Compartilhar<br>
 							<?php if(has_tag()) : ?><span class="fa fa-tag"></span> <?php the_tags(); ?><?php endif; ?>
 						</div>

@@ -34,7 +34,6 @@ $tipos = array('youtube', 'flickr', 'vimeo-square', 'instagram', 'picasa', 'pint
 					<p><?php the_excerpt(); ?></p>
 
 					<div class="icons">
-						<span class="fa fa-user"></span> <?php the_author_link(); ?>
 						<span class="fa fa-share-alt"></span> Compartilhar
 					</div>
 
