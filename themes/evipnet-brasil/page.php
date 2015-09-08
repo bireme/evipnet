@@ -15,9 +15,9 @@
 				<?php endwhile; ?>
 			</div>
 
-			<div class="widget destaques">
-				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sub-produtos') ) {}; ?>
-			</div>
+			<!--div class="widget destaques">
+				<?php //if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sub-produtos') ) {}; ?>
+			</div-->
 
 		</div>
 
