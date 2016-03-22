@@ -27,9 +27,20 @@
     <header class='top'>
         <div class="container">
 
-            <div class="contato"><a href="#">   
-                Contato
-            </a></div>
+            <div class="contato">
+                <a href="#contato" class="fancybox">Contato</a>
+                <div style="display:none" class="fancybox-hidden">
+                    <div id="contato">
+                        <?php
+                            $contact_page = get_page_by_title( 'Contato', OBJECT, 'wpcf7_contact_form' );
+                            if( $contact_page ) {
+                                $shortcode = sprintf( '[contact-form-7 id="%1$d" title="%2$s"]', $contact_page->ID, $contact_page->post_title );
+                                echo do_shortcode($shortcode);
+                            }
+                        ?>
+                    </div>
+                </div>
+            </div>
 
             <div class="logo"><img src="<?= get_stylesheet_directory_uri();?>/img/logo.png"></div>
             
